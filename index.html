@@ -12,7 +12,9 @@
 
 
     <!-- AOS -->
-    <link rel="stylesheet" href="assets/css/aos/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
 
     <!-- Variables -->
     <link rel="stylesheet" href="assets/css/veriables.css">
@@ -759,8 +761,7 @@
             <span class="line mb-5"></span>
             <h5 class="mb-3 footer-title">A Data Scientist and Machine Learning Engineer</h5>
             <p class="mt-20 profile-info">I am a passionate data scientist and machine learning engineer with a keen interest in leveraging data-driven insights to solve complex problems and drive innovation. With expertise in various machine learning algorithms and data analysis techniques, I am dedicated to delivering impactful solutions that drive business growth and enhance decision-making processes.</p>
-            
-            <button class="btn">Download My CV</button>
+            <button id="downloadButton" class="btn">Download My CV</button>
         </div>
         <div class="col-lg-4 about-card" data-aos="zoom-out" data-aos-delay="400">
             <h3 class="font-weight-light">Personal Info</h3>
@@ -852,6 +853,12 @@
 
    <script>
     AOS.init();
+    AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true
+});
+
   </script>
  </body>
  </html>

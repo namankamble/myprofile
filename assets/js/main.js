@@ -44,3 +44,27 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scrolled');
   }
 });
+
+
+
+// script.js
+
+document.getElementById("downloadButton").addEventListener("click", function() {
+  // Create a dynamic link element
+  var downloadLink = document.createElement("a");
+
+  // Set the href attribute to the path of your resume file
+  downloadLink.href = "assets/resume/Naman_Kamble.pdf";
+
+  // Set the download attribute to specify the filename for the downloaded file
+  downloadLink.download = "Naman_Kamble.pdf";
+
+  // Append the link to the document body
+  document.body.appendChild(downloadLink);
+
+  // Trigger a click event on the link
+  downloadLink.click();
+
+  // Remove the link from the document body
+  document.body.removeChild(downloadLink);
+});

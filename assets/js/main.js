@@ -44,6 +44,7 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scrolled');
   }
 });
+<<<<<<< HEAD
 
 
 
@@ -68,3 +69,5 @@ document.getElementById("downloadButton").addEventListener("click", function() {
   // Remove the link from the document body
   document.body.removeChild(downloadLink);
 });
+=======
+>>>>>>> e348322dc8a2793315d06b6d0bfe8cf37df2d13a

@@ -298,12 +298,12 @@ section {
   }
 
   
-@media screen and (max-width: 504px) {
+@media (max-width: 400px) and (orientation: portrait){
     .home .box .content {
       padding: 0 1rem;
     }
     .home .box .content {
-      margin-top: 70px;
+      margin-top: 10px;
       width: 75rem;
       line-height: 1px;
     }  
